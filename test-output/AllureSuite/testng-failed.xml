@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AllureSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="AllureTests(failed)">
+    <classes>
+      <class name="testCases.loginTestClass">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="loginWithValidCredentials"/>
+        </methods>
+      </class> <!-- testCases.loginTestClass -->
+      <class name="testCases.checkoutTestClass">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="tearDown"/>
+          <include name="verifyOrderCompletedOrNot"/>
+        </methods>
+      </class> <!-- testCases.checkoutTestClass -->
+    </classes>
+  </test> <!-- AllureTests(failed) -->
+</suite> <!-- Failed suite [AllureSuite] -->

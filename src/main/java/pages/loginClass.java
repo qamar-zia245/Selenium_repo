@@ -14,19 +14,25 @@ public class loginClass {
 		this.driver=driver;
 		
 	}	
+	
 	public void doLogin() {
+		WebElement username =driver.findElement(By.xpath("//input[@id='user-name']"));
+		username.sendKeys("visual_user");
 		
-	
-	WebElement username = driver.findElement(By.xpath("//input[@id='user-name']"));
-	username.sendKeys("standard_user");
-	
-	WebElement Password = driver.findElement(By.xpath("//input[@id='password']"));
-	Password.sendKeys("secret_sauce");
-	
-	WebElement login = driver.findElement(By.xpath("//input[@id='login-button']"));
-	login.click();
-	
+		WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
+		password.sendKeys("secret_sauce");
+		
+		WebElement loginButton = driver.findElement(By.xpath("//input[@id='login-button']"));
+		loginButton.click();
+		
+		
 	}
+	/*public void doLogin(String Username, String password) {
+		
+		driver.findElement(By.id("user-name")).sendKeys(Username);
+        driver.findElement(By.id("password")).sendKeys(password);
+        driver.findElement(By.id("login-button")).click();
+	}*/
 	public String verifyTitleAfterLogin() {
 		String title = driver.getTitle();
 		return title; 

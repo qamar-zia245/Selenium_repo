@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AllureSuite">
+    <test name="AllureTests">
+        <classes>
+           <class name="testCases.addCartTestClass"/>
+            <class name="testCases.checkoutTestClass"/>
+            <class name="testCases.loginTestClass"/>
+            <class name="testCases.productListingTestClass"/>
+        </classes>
+    </test>
+</suite>

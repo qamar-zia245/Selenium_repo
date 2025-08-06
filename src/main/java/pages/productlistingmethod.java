@@ -10,7 +10,8 @@ public class productlistingmethod
 	
 	WebDriver driver;
 	
-	public productlistingmethod(WebDriver driver) {
+	public productlistingmethod(WebDriver driver) 
+	{
 		this.driver = driver;
 	}
 
